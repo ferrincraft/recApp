@@ -24,7 +24,7 @@
 
     <div class="container session-actions">
       <a href="#"><div class="btn btn-highlight" id="addTag"><i class="fa fa-bookmark"></i></div></a>
-      <a href="#"><div class="btn btn-slide" id="addSlide"><i class="fa fa-camera"></i></div></a>
+      <button class="btn btn-slide" data-toggle="modal" data-target="#slideModal"><i class="fa fa-camera"></i></button>
       <button class="btn btn-note" data-toggle="modal" data-target="#noteModal"><i class="fa fa-sticky-note"></i></button>
     </div>
 
@@ -52,7 +52,7 @@
     <!-- Note Modal -->    
     <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content modal-note">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -69,6 +69,25 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-tag"><i class="fa fa-bookmark"></i></button>
             <button type="button"  id="addNote" class="btn btn-accept" data-dismiss="modal"><i class="fa fa-check"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Modal -->    
+    <div class="modal fade" id="slideModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-slide">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-tag"><i class="fa fa-bookmark"></i></button>
+            <button type="button" id="addSlide" class="btn btn-snap" data-dismiss="modal"></button>
           </div>
         </div>
       </div>

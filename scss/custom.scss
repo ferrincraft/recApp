@@ -146,7 +146,7 @@ input {
   width: 100%;
   margin: 0;
   height: 80px;
-//-webkit-animation: slide 10s linear infinite;
+-webkit-animation: slide 10s linear infinite;
 }
 
 @-webkit-keyframes slide {
@@ -216,7 +216,7 @@ input {
 .modal-dialog {
 	margin:0;
 	height: 100%;
-	.modal-content {
+	.modal-note {
 		border: none;
 		border-radius: 0;
 		height: 100%;
@@ -256,6 +256,53 @@ input {
 				width: 60px;
 				height: 60px;
 				font-size: 24px;
+			}
+		}
+	}
+	.modal-slide {
+		border: none;
+		border-radius: 0;
+		height: 100%;
+		background-color: $gray-900;
+		background-image: url(../assets/emergingtech.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: 50%;
+
+		.modal-header {
+			background-color: $black;
+			color: $white;
+			border-radius: 0;
+			border: none;
+			.close {
+				color: $white;
+				opacity: 1;
+				text-shadow: none;
+			}
+		}
+		.modal-footer {
+			border: none;    
+			padding: 1.5em 1em;
+			justify-content: space-between;
+			background-color: $black;
+			.btn-tag {
+				border-radius: 100px;
+				box-shadow: $box-shadow; 
+				color: $primary;
+				background-color: $white;
+				width: 46px;
+				height: 46px;
+			}
+			.btn-snap {
+			  display: block;
+			  text-indent: -9999px;
+			  background: url(../assets/snap-btn.svg);
+		    	width: 68px;
+		    	height: 68px;
+		    	background-size: 68px 68px;
+		    	border: none;
+			    position: absolute;
+			    left: calc(50% - 34px);
 			}
 		}
 	}
