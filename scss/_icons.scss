@@ -1,0 +1,91 @@
+.icon-tag {
+  display: block;
+  text-indent: -9999px;
+  background: url(../assets/marker-tag.svg);
+  &.icon-tag-sm {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
+}
+
+.icon-slide {
+  display: block;
+  text-indent: -9999px;
+  background: url(../assets/marker-slide.svg);
+  &.icon-slide-sm {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
+}
+
+.icon-note {
+  display: block;
+  text-indent: -9999px;
+  background: url(../assets/marker-note.svg);
+  &.icon-note-sm {
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+  }
+}
+
+.marker {
+    position: absolute;
+    width: 16px;
+    height: 80px;
+    top: 0;
+    left: 92%;
+    right: 0;
+  .icon-tag {
+    position: absolute;
+    display: block;
+    text-indent: -9999px;
+    background: url(../assets/marker-tag.svg);
+    width: 16px;
+    height: 80px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 80px;
+      width: 3px;
+      top: 0;
+      left: 6px;
+      background-color: $primary;
+    }
+  }
+  .icon-slide {
+    position: absolute;
+    top: -20px;
+    display: block;
+    text-indent: -9999px;
+    background: url(../assets/marker-slide.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+  .icon-note {
+    position: absolute;
+    top: -20px;
+    display: block;
+    text-indent: -9999px;
+    background: url(../assets/marker-note.svg);
+    width: 16px;
+    height: 16px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+  }
+ //-webkit-animation: marker-slide 9s linear forwards;
+}
+
+@-webkit-keyframes marker-slide {
+    from { left: 92%; }
+    to { left: -16px; }
+}
+
+
+  

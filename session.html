@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <!-- Plugin CSS -->
+    <link href="dist/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container session-info">
+      <h1><input type="" class="" id="session-title" placeholder="Session 1"></h1>
+      <input type="" class="" id="session-author" placeholder="Add author...">
+    </div>
+
+    <div class="container session-actions">
+      <a href="#"><div class="btn btn-highlight" id="addTag"><i class="fa fa-bookmark"></i></div></a>
+      <a href="#"><div class="btn btn-slide" id="addSlide"><i class="fa fa-camera"></i></div></a>
+      <button class="btn btn-note" data-toggle="modal" data-target="#noteModal"><i class="fa fa-sticky-note"></i></button>
+    </div>
+
+    <div class="soundwave-area" id="soundwave-area">
+      <div class="marker"><div class="icon-tag"></div></div>         
+      <div class="soundwave-animation"></div>
+    </div>
+
+
+    <div class="session-footer">
+      <ul class="counters">
+        <li class="item"><div class="icon-tag icon-tag-sm"></div><span class="value" id="numTags">0</span>
+        </li>
+        <li class="item"><div class="icon-slide icon-slide-sm"></div><div class="value" id="numSlides">0</div>
+        </li>
+        <li class="item"><div class="icon-note icon-note-sm"></div><div class="value" id="numNotes">0</div>
+        </li>
+      </ul>
+      <div class="stop-button">
+        <a href="#"><div class="btn"><i class="fa fa-square"></i></div></a>
+      </div>
+      <div class="time-ellapsed" id="elapsedTime"></div>
+    </div>
+
+    <!-- Note Modal -->    
+    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-tag"><i class="fa fa-bookmark"></i></button>
+            <button type="button"  id="addNote" class="btn btn-accept" data-dismiss="modal"><i class="fa fa-check"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="dist/plugins/elapseMe.js"></script>
+    <script type="text/javascript" src="dist/plugins/adder.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function()
+        {
+          elapseMe();
+        }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

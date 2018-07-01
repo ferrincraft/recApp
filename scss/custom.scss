@@ -1,0 +1,269 @@
+//
+// Colors
+//
+
+$blue:    #409FC1;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #FF300A;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$brown:	  #7A4402;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+//
+// Global
+//
+
+$body-bg: $gray-100;
+$body-color: $gray-800;
+
+.description {
+	color: $gray-500;
+}
+
+@import "../bootstrap/scss/bootstrap";
+
+
+//
+// Navbar
+//
+
+.navbar {
+	background-color: $white;
+	border-top: solid 2px $gray-200;
+}
+
+.nav-fill .nav-item {
+	color: $gray-600;
+	font-size: $font-size-sm;
+
+	&.active {
+		color: $primary;
+	}
+}
+
+//
+//Inputs
+//
+
+input {
+	background-color: $gray-100;
+	border: none;
+	caret-color: $primary;
+}
+
+//
+// Session
+//
+
+.start-message {
+	margin-top: 50%;
+}
+
+.btn-start {
+	background-color: $primary;
+	width: 90px;
+	height: 90px;
+	border-radius: 100px;
+	border: solid 4px $white;
+	box-shadow: $box-shadow; 
+}
+
+.session-info {
+	padding-top: ($spacer * 2);
+	input {
+		width: 100%;
+	}
+}
+
+.session-actions {
+	position: absolute;
+	top: 20px;
+	.btn {
+		background-color: $white;
+		border-radius: 100px;
+		box-shadow: $box-shadow;
+		i {
+			font-size: $h1-font-size;
+		}
+		&.btn-highlight {
+			position: absolute;
+			right: 5%;
+			top: 220px;
+			width: 158px;
+			height: 158px;
+			padding: 58px 0;
+			color: $primary;
+		}
+		&.btn-slide {
+			position: absolute;
+			left: 5%;
+			top: 180px;
+			width: 120px;
+			height: 120px;
+			padding: 42px 0;
+			color: $red;
+		}
+		&.btn-note {
+			position: absolute;
+			left: 50%;
+			top: 105px;
+			width: 82px;
+			height: 82px;
+			padding: 22px 0;
+			color: $brown;
+		}
+	}
+}
+
+.soundwave-area {
+	position: absolute;
+	width: 100%;
+	bottom: 130px;
+	margin: 0;
+}
+
+.soundwave-animation {
+  background: url("../assets/soundwave.svg");
+  background-repeat-y: no-repeat;
+  width: 100%;
+  margin: 0;
+  height: 80px;
+//-webkit-animation: slide 10s linear infinite;
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.session-footer {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 130px;
+	padding: 20px 16px;
+	margin: 0;
+	bottom: 0;
+	background-color: $white;
+
+	.counters {
+		list-style: none;
+		padding: 8px 0;
+		margin: 0;
+		display: flex;
+		align-content: space-between;
+		flex-flow: row wrap;
+		.item {
+			display: inline-flex;
+			line-height: 16px;
+			width: 100%;
+			.value {
+				color: $gray-500;
+				padding-left: 8px;
+			}
+		}
+	}
+
+	.stop-button {
+		margin: auto;
+		.btn{
+			font-size: 3rem;
+			color: $gray-500;
+		    border: 4px solid $gray-500;
+		    border-radius: 100px;
+		    width: 72px;
+		    height: 72px;
+		    padding: 8px;
+		    line-height: 0px;
+		    i {
+				color: $gray-500;
+		    }
+		}
+
+	}
+
+	.time-ellapsed {
+		text-align: right;
+		color: $gray-500;
+		margin: auto;
+		margin-right: 0;
+		min-width: 50px;
+	}
+}
+
+//
+//Modals
+//
+
+.modal-dialog {
+	margin:0;
+	height: 100%;
+	.modal-content {
+		border: none;
+		border-radius: 0;
+		height: 100%;
+		background-color: $gray-100;
+		textarea {
+			background-color: $gray-100;
+			border: none;
+			caret-color: $primary;
+		}
+		.modal-header {
+			background-color: $brown;
+			color: $white;
+			border-radius: 0;
+			.close {
+				color: $white;
+				opacity: 1;
+				text-shadow: none;
+			}
+		}
+		.modal-footer {
+			border: none;    
+			padding-bottom: 2em;
+			justify-content: space-between;
+			.btn-tag {
+				border-radius: 100px;
+				box-shadow: $box-shadow; 
+				color: $primary;
+				background-color: $white;
+				width: 46px;
+				height: 46px;
+			}
+			.btn-accept {
+				border-radius: 100px;
+				box-shadow: $box-shadow; 
+				color: $brown;
+				background-color: $white;
+				width: 60px;
+				height: 60px;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+//
+// Custom Icons
+//
+
+@import "icons";
+

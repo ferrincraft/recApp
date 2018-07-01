@@ -1,0 +1,9 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>
+    marker-tag
+  </title>
+  <defs>
+    <path d="M7.5 3h7C16.9852814 3 19 5.01471863 19 7.5v2.19443743c0 1.46301847-.6407714 2.85263897-1.7534258 3.80259857l-5.7797412 4.9346147c-.3811056.3253795-.944197.3184417-1.3171702-.0162287l-5.4889399-4.9252485C3.6038067 12.5417983 3 11.1887492 3 9.76871837V7.5C3 5.01471863 5.01471863 3 7.5 3z" id="a"/>
+  </defs>
+  <use fill="#409FC1" xlink:href="#a" transform="translate(-3 -3)" fill-rule="evenodd"/>
+</svg>
